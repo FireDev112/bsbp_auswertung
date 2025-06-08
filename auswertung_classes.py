@@ -133,6 +133,8 @@ class Einsatz():
         if _stichwort != None:
             if "," in _stichwort:
                 self.stichwort = _stichwort.split(",")[0]
+            else:
+                self.stichwort = _stichwort
     
     def set_adresse(self, _strasse, _plz, _ort):
         # Methode setzt die Adresse und manipuliert die Daten
